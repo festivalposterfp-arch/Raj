@@ -1,22 +1,44 @@
 console.log("Website Loaded");
+
+/* POPUP */
 function openPopup(src){
-document.getElementById("popup").style.display="flex";
-document.getElementById("popupImg").src=src;
+const popup=document.getElementById("popup");
+const img=document.getElementById("popupImg");
+
+if(popup && img){
+popup.style.display="flex";
+img.src=src;
+}
 }
 
 function closePopup(){
-document.getElementById("popup").style.display="none";
+const popup=document.getElementById("popup");
+
+if(popup){
+popup.style.display="none";
 }
-window.addEventListener("load",function(){
-document.getElementById("loader").style.display="none";
+}
+
+/* LOADER */
+window.addEventListener("load", function(){
+const loader=document.getElementById("loader");
+
+if(loader){
+loader.style.display="none";
+}
 });
-window.addEventListener("scroll",function(){
+
+/* NAVBAR SCROLL EFFECT */
+window.addEventListener("scroll", function(){
+
 const nav=document.querySelector(".navbar");
+
+if(!nav) return;
 
 if(window.scrollY>50){
 nav.style.background="rgba(0,0,0,0.8)";
-}
-else{
+}else{
 nav.style.background="rgba(255,255,255,0.05)";
 }
+
 });
