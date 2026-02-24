@@ -496,68 +496,80 @@ body {
   align-items: center;
   text-align: center;
 }
-/* SERVICES SECTION */
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
 
+body{
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+min-height:100vh;
+}
+
+/* NAVBAR */
+.navbar{
+padding:20px;
+text-align:center;
+font-size:24px;
+font-weight:bold;
+}
+
+/* SERVICES */
 .services{
-    padding:80px 10%;
-    text-align:center;
+padding:80px 10%;
+text-align:center;
 }
 
 .section-title{
-    font-size:40px;
-    margin-bottom:50px;
-    color:white;
-    letter-spacing:2px;
+font-size:40px;
+margin-bottom:50px;
 }
 
-/* GRID LAYOUT */
+/* GRID */
 .service-container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
 }
 
-/* CARD STYLE */
+/* CARD */
 .service-card{
-    padding:35px;
-    border-radius:20px;
-    background:rgba(255,255,255,0.08);
-    backdrop-filter:blur(15px);
-    border:1px solid rgba(255,255,255,0.2);
-    transition:0.4s ease;
-    cursor:pointer;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(15px);
+border-radius:20px;
+padding:35px;
+transition:0.4s;
+border:1px solid rgba(255,255,255,0.2);
+cursor:pointer;
 }
 
-/* ICON STYLE */
 .service-card i{
-    font-size:40px;
-    margin-bottom:15px;
-    color:#00e5ff;
+font-size:40px;
+color:#00e5ff;
+margin-bottom:15px;
 }
 
-/* TITLE */
 .service-card h3{
-    font-size:22px;
-    margin-bottom:10px;
-    color:white;
+margin-bottom:10px;
 }
 
-/* TEXT */
 .service-card p{
-    font-size:15px;
-    color:#ccc;
+color:#ddd;
 }
 
 /* HOVER EFFECT */
 .service-card:hover{
-    transform:translateY(-12px) scale(1.03);
-    box-shadow:0 10px 35px rgba(0,229,255,0.3);
+transform:translateY(-10px);
+box-shadow:0 10px 30px rgba(0,229,255,0.4);
 }
 
 /* MOBILE */
 @media(max-width:768px){
-    .section-title{
-        font-size:28px;
-    }
+.section-title{
+font-size:28px;
 }
-
+}
