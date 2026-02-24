@@ -477,3 +477,22 @@ footer {
     flex-direction: column;
   }
 }
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0f0f0f;
+  color: #fff;
+}
+
+.navbar {
+  background: #111;
+}
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff4d4d, #1a1a1a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
