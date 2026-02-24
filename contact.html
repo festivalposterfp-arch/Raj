@@ -1,59 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Festival Poster Designer</title>
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><section class="contact">
-<link rel="stylesheet" href="css/style.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+/* GENERAL */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+/* CONTACT SECTION */
+.contact {
+  padding: 60px 10%;
+  background: #ffffff;
+}
+
+.contact-container {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* CONTACT INFO */
+.contact-info {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact-info h3 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: #ff4d4d;
+}
+
+.whatsapp {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #25D366;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.whatsapp:hover {
+  background: #1ebe5d;
+}
+
+/* CONTACT FORM */
+.contact-form {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 120px;
+}
+
+.contact-form button {
+  padding: 12px;
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form button:hover {
+  background: #ff4d4d;
+}
+
+/* INSTAGRAM SECTION */
+.instagram {
+  padding: 60px 10%;
+  text-align: center;
+  background: #f2f2f2;
+}
+
+.insta-box {
+  margin-top: 20px;
+}
+
+.insta-icon {
+  font-size: 50px;
+  color: #E1306C;
+  margin-bottom: 10px;
+}
+
+.instagram a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  background: #E1306C;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.instagram a:hover {
+  background: #c72d5f;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+  color: #fff;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- CONTACT SECTION -->
+<section class="contact">
+
 <h2 class="section-title">Contact Me</h2>
-<link rel="stylesheet" href="style.css">
+
 <div class="contact-container">
 
-<!-- Contact Info -->
-<div class="contact-info">
+  <!-- Contact Info -->
+  <div class="contact-info">
+    <h3>Let's Work Together</h3>
 
-<h3>Let's Work Together</h3>
+    <p><i class="fa-solid fa-envelope"></i> festivalposterfp@gmail.com</p>
+    <p><i class="fa-solid fa-phone"></i> +91 9265578066</p>
 
-<p>Email: festivalposterfp@gmail.com</p>
-<p>Phone: +91 9265578066</p>
+    <a href="https://wa.me/919265578066" target="_blank" class="whatsapp">
+      <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+    </a>
+  </div>
 
-<a href="https://wa.me/919265578066" target="_blank" class="whatsapp">
-Chat on WhatsApp
-</a>
-
-</div>
-
-
-<!-- Contact Form -->
-<form class="contact-form">
-
-<input type="text" placeholder="Your Name" required>
-
-<input type="email" placeholder="Your Email" required>
-
-<textarea placeholder="Your Message"></textarea>
-
-<button type="submit">Send Message</button>
-
-</form>
+  <!-- Contact Form -->
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
 
 </div>
 
 </section>
+
+<!-- INSTAGRAM SECTION -->
 <section class="instagram">
 
 <h2 class="section-title">Follow Me On Instagram</h2>
 
 <div class="insta-box">
+  <i class="fa-brands fa-instagram insta-icon"></i>
+  <h3>@festival_poster.in</h3>
+  <p>Follow for latest poster designs & creative works.</p>
 
-<i class="fa-brands fa-instagram"></i>
-
-<h3>festival_poster</h3>
-
-<p>Follow for latest poster designs & creative works.</p>
-
-<a href="https://www.instagram.com/festival_poster.in" target="_blank">
-Visit Instagram
-</a>
-
+  <a href="https://www.instagram.com/festival_poster.in" target="_blank">
+    Visit Instagram
+  </a>
 </div>
 
-
 </section>
+
+<!-- FOOTER -->
+<footer>
+© 2026 Festival Poster Designer | All Rights Reserved
+</footer>
+
+</body>
+</html>
