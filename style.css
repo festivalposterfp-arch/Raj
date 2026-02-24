@@ -318,7 +318,7 @@ body {
 ================================= */
 .contact {
   padding: 60px 10%;
-  background: #ffffff;
+  background: 	#181818;
 }
 
 .contact-container {
@@ -496,3 +496,4 @@ body {
   align-items: center;
   text-align: center;
 }
+
