@@ -1,30 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Professional Portfolio</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-<h1>My Works</h1>
+  <h1>My Creative Works</h1>
+  <p>Design • Creativity • Innovation</p>
 </header>
 
 <section class="portfolio">
-
-<img src="images/work1.png" class="work">
-<img src="images/work2.png" class="work">
-<img src="images/work3.png" class="work">
-<img src="images/work4.png" class="work">
-
-<img src="images/work5.png" class="work">
-<img src="images/work6.png" class="work">
-<img src="images/work7.png" class="work">
-<img src="images/work8.png" class="work">
+  <div class="gallery">
+    <img src="images/work1.png" onclick="openLightbox(this.src)">
+    <img src="images/work2.png" onclick="openLightbox(this.src)">
+    <img src="images/work3.png" onclick="openLightbox(this.src)">
+    <img src="images/work4.png" onclick="openLightbox(this.src)">
+    <img src="images/work5.png" onclick="openLightbox(this.src)">
+    <img src="images/work6.png" onclick="openLightbox(this.src)">
+    <img src="images/work7.png" onclick="openLightbox(this.src)">
+    <img src="images/work8.png" onclick="openLightbox(this.src)">
+  </div>
 </section>
 
-</body>
-<a href="https://wa.me/91 9265578066" class="whatsapp">WhatsApp</a>
+<!-- Lightbox -->
+<div id="lightbox" onclick="closeLightbox()">
+  <span class="close">&times;</span>
+  <img id="lightbox-img">
+</div>
 
+<a href="https://wa.me/919265578066" class="whatsapp" target="_blank">
+  Chat on WhatsApp
+</a>
+
+<script src="script.js"></script>
+</body>
 </html>
